@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import { ACCES_ROL, ETICHETE_NIVEL, ETICHETE_ROL } from "@/lib/ia/corpus";
 import {
   celeMaiApropiate,
@@ -29,12 +29,21 @@ interface Index {
 }
 
 export function LabIA() {
-  const gpu = useMemo(() => areWebGPU(), []);
+  // Determinat după montare, ca să nu difere randarea de pe server (evită erori de hidratare).
+  const [gpu, setGpu] = useState(false);
   const [tab, setTab] = useState<Tab>("index");
   const [rol, setRol] = useState<Rol>("angajat");
   const [index, setIndex] = useState<Index | null>(null);
-  const [encoder, setEncoder] = useState<((t: string[]) => Promise<number[][]>) | null>(null);
-  const [modDemo, setModDemo] = useState(!gpu);
+  const [modDemo, setModDemo] = useState(false);
+
+  useEffect(() => {
+    const id = requestAnimationFrame(() => {
+      const are = areWebGPU();
+      setGpu(are);
+      setModDemo(!are);
+    });
+    return () => cancelAnimationFrame(id);
+  }, []);
 
   return (
     <div className="space-y-6">
@@ -74,13 +83,9 @@ export function LabIA() {
         ))}
       </div>
 
-      {tab === "index" && (
-        <Indexare rol={rol} setRol={setRol} index={index} setIndex={setIndex} setEncoder={setEncoder} />
-      )}
-      {tab === "intrebare" && (
-        <Intrebare index={index} encoder={encoder} modDemo={modDemo} gpu={gpu} />
-      )}
-      {tab === "evaluare" && <Evaluare index={index} encoder={encoder} />}
+      {tab === "index" && <Indexare rol={rol} setRol={setRol} index={index} setIndex={setIndex} />}
+      {tab === "intrebare" && <Intrebare index={index} modDemo={modDemo} gpu={gpu} />}
+      {tab === "evaluare" && <Evaluare index={index} />}
       {tab === "redteam" && <RedTeam rol={rol} />}
     </div>
   );
@@ -119,13 +124,11 @@ function Indexare({
   setRol,
   index,
   setIndex,
-  setEncoder,
 }: {
   rol: Rol;
   setRol: (r: Rol) => void;
   index: Index | null;
   setIndex: (i: Index) => void;
-  setEncoder: (e: (t: string[]) => Promise<number[][]>) => void;
 }) {
   const [marime, setMarime] = useState(60);
   const [suprapunere, setSuprapunere] = useState(15);
@@ -140,7 +143,6 @@ function Indexare({
     setStare("Se încarcă modelul de încorporări (transformers.js)…");
     try {
       const enc = await incarcaEncoder();
-      setEncoder(enc);
       const frag = fragmenteaza(docs, marime, suprapunere);
       setStare(`Se calculează ${frag.length} încorporări…`);
       const vectori = await enc(frag.map((f) => `passage: ${f.text}`));
@@ -233,12 +235,10 @@ function Indexare({
 /* ---------------- Întrebare → răspuns ---------------- */
 function Intrebare({
   index,
-  encoder,
   modDemo,
   gpu,
 }: {
   index: Index | null;
-  encoder: ((t: string[]) => Promise<number[][]>) | null;
   modDemo: boolean;
   gpu: boolean;
 }) {
@@ -253,17 +253,18 @@ function Intrebare({
   const folosesteModel = gpu && !modDemo;
 
   async function intreaba() {
-    if (!index || !encoder) return;
+    if (!index || !intrebare.trim()) return;
     setOcupat(true);
     setRaspuns("");
     setTel(null);
-    const [qv] = await encoder([`query: ${intrebare}`]);
-    const top = celeMaiApropiate(qv, index.fragmente, index.vectori, k);
-    setRegasite(top);
+    try {
+      const enc = await incarcaEncoder();
+      const [qv] = await enc([`query: ${intrebare}`]);
+      const top = celeMaiApropiate(qv, index.fragmente, index.vectori, k);
+      setRegasite(top);
 
-    const t0 = performance.now();
-    if (folosesteModel) {
-      try {
+      const t0 = performance.now();
+      if (folosesteModel) {
         const engine = await incarcaModel(MODEL_ID);
         const context = top.map((f) => `[${f.id}] ${f.text}`).join("\n");
         const raspunsModel = await engine.chat.completions.create({
@@ -285,20 +286,21 @@ function Intrebare({
         setRaspuns(txt);
         setInregistrat(false);
         setTel(compuneTelemetrie(durata, u?.prompt_tokens ?? 0, u?.completion_tokens ?? txt.split(/\s+/).length));
-      } catch (e) {
-        setRaspuns(`Eroare la generare: ${(e as Error).message}. Comutați pe modul demonstrativ.`);
+      } else {
+        const rec = raspunsInregistrat(intrebare);
+        const durata = performance.now() - t0;
+        const txt = rec
+          ? `${rec.raspuns}\n\nSurse: ${rec.surse.join(", ")}`
+          : "Nu găsesc răspunsul în fragmentele recuperate (rulare înregistrată).";
+        setRaspuns(txt);
+        setInregistrat(true);
+        setTel(compuneTelemetrie(durata, intrebare.split(/\s+/).length, txt.split(/\s+/).length));
       }
-    } else {
-      const rec = raspunsInregistrat(intrebare);
-      const durata = performance.now() - t0;
-      const txt = rec
-        ? `${rec.raspuns}\n\nSurse: ${rec.surse.join(", ")}`
-        : "Nu găsesc răspunsul în fragmentele recuperate (rulare înregistrată).";
-      setRaspuns(txt);
-      setInregistrat(true);
-      setTel(compuneTelemetrie(durata, intrebare.split(/\s+/).length, txt.split(/\s+/).length));
+    } catch (e) {
+      setRaspuns(`Eroare: ${(e as Error).message}. Încercați din nou sau comutați pe modul demonstrativ.`);
+    } finally {
+      setOcupat(false);
     }
-    setOcupat(false);
   }
 
   if (!index) return <NevoieIndex />;
@@ -376,13 +378,7 @@ function Intrebare({
 }
 
 /* ---------------- Evaluare ---------------- */
-function Evaluare({
-  index,
-  encoder,
-}: {
-  index: Index | null;
-  encoder: ((t: string[]) => Promise<number[][]>) | null;
-}) {
+function Evaluare({ index }: { index: Index | null }) {
   const [k, setK] = useState(3);
   const [rezultate, setRezultate] = useState<
     { id: string; intrebare: string; surseAsteptate: string[]; surseCitate: string[]; precizie: number; rapel: number; citeaza: boolean }[]
@@ -391,24 +387,28 @@ function Evaluare({
   const [ocupat, setOcupat] = useState(false);
 
   async function ruleaza() {
-    if (!index || !encoder) return;
+    if (!index) return;
     setOcupat(true);
-    const vecs = await encoder(SET_TEST.map((t) => `query: ${t.intrebare}`));
-    const rez = SET_TEST.map((t, i) => {
-      const top = celeMaiApropiate(vecs[i], index.fragmente, index.vectori, k);
-      const surseCitate = Array.from(new Set(top.map((f) => f.docId)));
-      return {
-        id: t.id,
-        intrebare: t.intrebare,
-        surseAsteptate: t.surseAsteptate,
-        surseCitate,
-        precizie: precisionAtK(top, t.surseAsteptate, k),
-        rapel: recallAtK(top, t.surseAsteptate, k),
-        citeaza: citeazaCorect(surseCitate, t.surseAsteptate),
-      };
-    });
-    setRezultate(rez);
-    setOcupat(false);
+    try {
+      const enc = await incarcaEncoder();
+      const vecs = await enc(SET_TEST.map((t) => `query: ${t.intrebare}`));
+      const rez = SET_TEST.map((t, i) => {
+        const top = celeMaiApropiate(vecs[i], index.fragmente, index.vectori, k);
+        const surseCitate = Array.from(new Set(top.map((f) => f.docId)));
+        return {
+          id: t.id,
+          intrebare: t.intrebare,
+          surseAsteptate: t.surseAsteptate,
+          surseCitate,
+          precizie: precisionAtK(top, t.surseAsteptate, k),
+          rapel: recallAtK(top, t.surseAsteptate, k),
+          citeaza: citeazaCorect(surseCitate, t.surseAsteptate),
+        };
+      });
+      setRezultate(rez);
+    } finally {
+      setOcupat(false);
+    }
   }
 
   const medPrec = rezultate.length ? rezultate.reduce((s, r) => s + r.precizie, 0) / rezultate.length : 0;

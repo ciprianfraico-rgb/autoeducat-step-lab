@@ -16,6 +16,8 @@ export function areWebGPU(): boolean {
   return typeof navigator !== "undefined" && "gpu" in navigator;
 }
 
+export const WEBLLM_CDN = "https://esm.run/@mlc-ai/web-llm@0.2.85";
+
 let enginePromise: Promise<MLCEngine> | null = null;
 
 export async function incarcaModel(
@@ -24,7 +26,8 @@ export async function incarcaModel(
 ): Promise<MLCEngine> {
   if (!enginePromise) {
     enginePromise = (async () => {
-      const webllm = await import("@mlc-ai/web-llm");
+      const importExtern = new Function("u", "return import(u)") as (u: string) => Promise<typeof import("@mlc-ai/web-llm")>;
+      const webllm = await importExtern(WEBLLM_CDN);
       return webllm.CreateMLCEngine(modelId, {
         initProgressCallback: (r) => onProgres?.({ progress: r.progress, text: r.text }),
       });
@@ -38,16 +41,22 @@ export function reseteazaModel() {
 }
 
 // ---------- încorporări ----------
+// transformers.js se încarcă din CDN (ESM), nu prin bundler: onnxruntime-web împachetat
+// de Turbopack pierde calea către fișierele WASM. Modelul se descarcă tot de pe CDN-ul HF.
+export const TRANSFORMERS_CDN = "https://cdn.jsdelivr.net/npm/@huggingface/transformers@4.3.0";
+
 let embedderPromise: Promise<(texte: string[]) => Promise<number[][]>> | null = null;
 
 export async function incarcaEncoder(): Promise<(texte: string[]) => Promise<number[][]>> {
   if (!embedderPromise) {
     embedderPromise = (async () => {
-      const { pipeline } = await import("@huggingface/transformers");
-      const extractor = await pipeline("feature-extraction", MODEL_EMBED_ID);
+      // import dinamic dintr-o variabilă, ca bundler-ul să nu încerce să-l rescrie.
+      const importExtern = new Function("u", "return import(u)") as (u: string) => Promise<typeof import("@huggingface/transformers")>;
+      const t = await importExtern(TRANSFORMERS_CDN);
+      const extractor = await t.pipeline("feature-extraction", MODEL_EMBED_ID);
       return async (texte: string[]) => {
         // e5 recomandă prefixele „query:” / „passage:”; le lăsăm în seama apelantului.
-        const out = await extractor(texte, { pooling: "mean", normalize: true });
+        const out = await extractor(texte.map((s) => String(s)), { pooling: "mean", normalize: true });
         return out.tolist() as number[][];
       };
     })();
