@@ -50,8 +50,11 @@ body {
   line-height: 1.55;
 }
 
-a {
-  color: var(--accent);
+/* În @layer base, ca utilitarele Tailwind (ex. text-white) să aibă prioritate peste culoarea linkurilor. */
+@layer base {
+  a {
+    color: var(--accent);
+  }
 }
 
 *:focus-visible {

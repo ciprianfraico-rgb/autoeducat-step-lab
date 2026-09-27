@@ -288,13 +288,13 @@ function Intrebare({
         setTel(compuneTelemetrie(durata, u?.prompt_tokens ?? 0, u?.completion_tokens ?? txt.split(/\s+/).length));
       } else {
         const rec = raspunsInregistrat(intrebare);
-        const durata = performance.now() - t0;
         const txt = rec
           ? `${rec.raspuns}\n\nSurse: ${rec.surse.join(", ")}`
           : "Nu găsesc răspunsul în fragmentele recuperate (rulare înregistrată).";
         setRaspuns(txt);
         setModRaspuns("inregistrat");
-        setTel(compuneTelemetrie(durata, intrebare.split(/\s+/).length, txt.split(/\s+/).length));
+        // În modul demonstrativ nu există inferență reală, deci nu raportăm telemetrie.
+        setTel(null);
       }
     } catch (e) {
       setRaspuns(`Eroare: ${(e as Error).message}. Încercați din nou sau comutați pe modul demonstrativ.`);
@@ -351,6 +351,17 @@ function Intrebare({
             <MicKpi eticheta="Tokeni răspuns" valoare={tel.tokeniRaspuns} />
             <MicKpi eticheta="Tokeni/s" valoare={tel.tokeniPeSecunda} />
             <MicKpi eticheta="Energie (est.)" valoare={`${tel.energieWhEstimata} Wh`} />
+          </div>
+        )}
+        {!tel && modRaspuns === "inregistrat" && (
+          <div className="space-y-2">
+            <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+              <MicKpi eticheta="Latență" valoare="—" />
+              <MicKpi eticheta="Tokeni răspuns" valoare="—" />
+              <MicKpi eticheta="Tokeni/s" valoare="—" />
+              <MicKpi eticheta="Energie (est.)" valoare="—" />
+            </div>
+            <p className="text-xs text-muted">Telemetria se măsoară doar la rularea live.</p>
           </div>
         )}
       </div>
