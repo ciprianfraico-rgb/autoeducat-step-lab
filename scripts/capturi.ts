@@ -77,16 +77,18 @@ const CAPTURI: Captura[] = [
     nr: 7,
     fisier: "lab-ia-raspuns",
     pagina: "Lab IA — răspuns cu surse",
-    arata: "Un răspuns cu surse citate",
+    arata: "Un răspuns cu surse citate (rulare înregistrată — generarea live cere un browser cu adaptor WebGPU real)",
     cale: "/lab/ia",
-    necesitaGpu: true,
     async pregateste(p) {
       await p.getByRole("button", { name: "Indexează în browser" }).click();
       await p.getByText(/Index construit/).waitFor({ timeout: 120000 });
       await p.getByRole("tab", { name: /Întrebare/ }).click();
+      // Chrome automatizat expune navigator.gpu dar nu are adaptor real → folosim modul
+      // demonstrativ, care produce un răspuns real, ancorat în surse, marcat „rulare înregistrată”.
+      await p.getByRole("checkbox", { name: /modul demonstrativ/ }).check();
       await p.getByRole("button", { name: /Întreabă/ }).click();
-      await p.getByText(/Fragmente recuperate/).waitFor();
-      await p.waitForTimeout(4000);
+      await p.getByText(/rulare înregistrată/).waitFor({ timeout: 60000 });
+      await p.waitForTimeout(1200);
     },
   },
   {
@@ -140,8 +142,10 @@ async function main() {
   })();
   console.log(`WebGPU în Chrome: ${gpu ? "DA" : "NU"}`);
 
+  const doar = process.env.DOAR ? process.env.DOAR.split(",").map(Number) : null;
   const facute: { c: Captura; ora: string }[] = [];
   for (const c of CAPTURI) {
+    if (doar && !doar.includes(c.nr)) continue;
     if (c.necesitaGpu && !gpu) {
       console.warn(`\n⚠ Captura ${c.nr} (${c.pagina}) are nevoie de WebGPU, indisponibil în acest Chrome.`);
       console.warn("  Oprire. Faceți manual capturile 6–9 în browserul dvs. cu WebGPU:");
@@ -180,8 +184,10 @@ async function main() {
     ),
     "",
   ];
-  writeFileSync(resolve(DIR, "index.md"), linii.join("\n"), "utf8");
-  console.log(`\nScris docs/capturi/index.md (${facute.length} capturi).`);
+  if (!doar) {
+    writeFileSync(resolve(DIR, "index.md"), linii.join("\n"), "utf8");
+    console.log(`\nScris docs/capturi/index.md (${facute.length} capturi).`);
+  }
 
   await browser.close();
 }

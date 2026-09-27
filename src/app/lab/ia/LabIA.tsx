@@ -246,7 +246,7 @@ function Intrebare({
   const [k, setK] = useState(3);
   const [regasite, setRegasite] = useState<FragmentRegasit[] | null>(null);
   const [raspuns, setRaspuns] = useState<string>("");
-  const [inregistrat, setInregistrat] = useState(false);
+  const [modRaspuns, setModRaspuns] = useState<"live" | "inregistrat" | "eroare" | null>(null);
   const [tel, setTel] = useState<Telemetrie | null>(null);
   const [ocupat, setOcupat] = useState(false);
 
@@ -284,7 +284,7 @@ function Intrebare({
         const durata = performance.now() - t0;
         const u = raspunsModel.usage;
         setRaspuns(txt);
-        setInregistrat(false);
+        setModRaspuns("live");
         setTel(compuneTelemetrie(durata, u?.prompt_tokens ?? 0, u?.completion_tokens ?? txt.split(/\s+/).length));
       } else {
         const rec = raspunsInregistrat(intrebare);
@@ -293,11 +293,13 @@ function Intrebare({
           ? `${rec.raspuns}\n\nSurse: ${rec.surse.join(", ")}`
           : "Nu găsesc răspunsul în fragmentele recuperate (rulare înregistrată).";
         setRaspuns(txt);
-        setInregistrat(true);
+        setModRaspuns("inregistrat");
         setTel(compuneTelemetrie(durata, intrebare.split(/\s+/).length, txt.split(/\s+/).length));
       }
     } catch (e) {
       setRaspuns(`Eroare: ${(e as Error).message}. Încercați din nou sau comutați pe modul demonstrativ.`);
+      setModRaspuns("eroare");
+      setTel(null);
     } finally {
       setOcupat(false);
     }
@@ -335,8 +337,9 @@ function Intrebare({
           <div className="rounded-xl border border-border bg-surface p-4">
             <div className="flex items-center gap-2">
               <h3 className="text-sm font-semibold text-foreground">Răspuns</h3>
-              {inregistrat && <Eticheta ton="warning">rulare înregistrată</Eticheta>}
-              {!inregistrat && <Eticheta ton="ok">rulare live</Eticheta>}
+              {modRaspuns === "inregistrat" && <Eticheta ton="warning">rulare înregistrată</Eticheta>}
+              {modRaspuns === "live" && <Eticheta ton="ok">rulare live</Eticheta>}
+              {modRaspuns === "eroare" && <Eticheta ton="danger">eroare</Eticheta>}
             </div>
             <p className="mt-2 whitespace-pre-wrap text-sm text-foreground">{raspuns}</p>
           </div>
