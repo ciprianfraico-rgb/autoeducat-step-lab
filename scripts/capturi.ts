@@ -87,7 +87,7 @@ const CAPTURI: Captura[] = [
       // demonstrativ, care produce un răspuns real, ancorat în surse, marcat „rulare înregistrată”.
       await p.getByRole("checkbox", { name: /modul demonstrativ/ }).check();
       await p.getByRole("button", { name: /Întreabă/ }).click();
-      await p.getByText(/rulare înregistrată/).waitFor({ timeout: 60000 });
+      await p.locator("span", { hasText: /^rulare înregistrată$/ }).first().waitFor({ timeout: 60000 });
       await p.waitForTimeout(1200);
     },
   },
