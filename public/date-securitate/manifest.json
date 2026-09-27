@@ -1,0 +1,14 @@
+{
+  "seed": 20260312,
+  "organizatie": "Firma Demo SRL",
+  "data": "2026-03-12",
+  "numarEvenimente": 574,
+  "fisiere": [
+    "eve.json",
+    "auth.log",
+    "access.log",
+    "mail.log",
+    "email-suspect.eml"
+  ],
+  "nota": "Date sintetice, generate determinist. Fără date personale reale."
+}

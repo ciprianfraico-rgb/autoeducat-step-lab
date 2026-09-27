@@ -1,0 +1,272 @@
+Mar 12 02:15:08 vpn-gw01 vpn-auth[3511]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:15:16 vpn-gw01 vpn-auth[2503]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:15:23 vpn-gw01 vpn-auth[3500]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:15:32 vpn-gw01 vpn-auth[6672]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:15:37 vpn-gw01 vpn-auth[5792]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:15:44 vpn-gw01 vpn-auth[2623]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:15:52 vpn-gw01 vpn-auth[4280]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:15:57 vpn-gw01 vpn-auth[9863]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:16:04 vpn-gw01 vpn-auth[7931]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:16:12 vpn-gw01 vpn-auth[3406]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:16:20 vpn-gw01 vpn-auth[7453]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:16:29 vpn-gw01 vpn-auth[6497]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:16:36 vpn-gw01 vpn-auth[4949]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:16:43 vpn-gw01 vpn-auth[1623]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:16:48 vpn-gw01 vpn-auth[7279]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:16:56 vpn-gw01 vpn-auth[1345]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:17:03 vpn-gw01 vpn-auth[1590]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:17:08 vpn-gw01 vpn-auth[1071]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:17:17 vpn-gw01 vpn-auth[2819]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:17:24 vpn-gw01 vpn-auth[2402]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:17:31 vpn-gw01 vpn-auth[4270]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:17:39 vpn-gw01 vpn-auth[9368]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:17:47 vpn-gw01 vpn-auth[6368]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:17:54 vpn-gw01 vpn-auth[3161]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:18:02 vpn-gw01 vpn-auth[1607]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:18:10 vpn-gw01 vpn-auth[3964]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:18:16 vpn-gw01 vpn-auth[3708]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:18:24 vpn-gw01 vpn-auth[6296]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:18:31 vpn-gw01 vpn-auth[1518]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:18:39 vpn-gw01 vpn-auth[6558]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:18:45 vpn-gw01 vpn-auth[3406]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:18:53 vpn-gw01 vpn-auth[1074]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:18:58 vpn-gw01 vpn-auth[9088]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:19:06 vpn-gw01 vpn-auth[5188]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:19:11 vpn-gw01 vpn-auth[4762]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:19:20 vpn-gw01 vpn-auth[5441]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:19:28 vpn-gw01 vpn-auth[6603]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:19:36 vpn-gw01 vpn-auth[2005]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:19:43 vpn-gw01 vpn-auth[4183]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:19:52 vpn-gw01 vpn-auth[2848]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:20:01 vpn-gw01 vpn-auth[7704]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:20:10 vpn-gw01 vpn-auth[2513]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:20:16 vpn-gw01 vpn-auth[6036]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:20:25 vpn-gw01 vpn-auth[1446]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:20:31 vpn-gw01 vpn-auth[7161]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:20:38 vpn-gw01 vpn-auth[9502]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:20:45 vpn-gw01 vpn-auth[1460]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:20:50 vpn-gw01 vpn-auth[8941]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:20:57 vpn-gw01 vpn-auth[6585]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:21:04 vpn-gw01 vpn-auth[2781]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:21:13 vpn-gw01 vpn-auth[8775]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:21:18 vpn-gw01 vpn-auth[3876]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:21:25 vpn-gw01 vpn-auth[5310]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:21:33 vpn-gw01 vpn-auth[1041]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:21:38 vpn-gw01 vpn-auth[6886]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:21:44 vpn-gw01 vpn-auth[5578]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:21:51 vpn-gw01 vpn-auth[4872]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:22:00 vpn-gw01 vpn-auth[5299]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:22:06 vpn-gw01 vpn-auth[1418]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:22:14 vpn-gw01 vpn-auth[7291]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:22:20 vpn-gw01 vpn-auth[5082]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:22:27 vpn-gw01 vpn-auth[1989]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:22:36 vpn-gw01 vpn-auth[1881]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:22:42 vpn-gw01 vpn-auth[8266]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:22:51 vpn-gw01 vpn-auth[7521]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:22:57 vpn-gw01 vpn-auth[1677]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:23:06 vpn-gw01 vpn-auth[961]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:23:11 vpn-gw01 vpn-auth[3621]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:23:19 vpn-gw01 vpn-auth[4298]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:23:24 vpn-gw01 vpn-auth[3742]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:23:31 vpn-gw01 vpn-auth[6076]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:23:39 vpn-gw01 vpn-auth[6278]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:23:47 vpn-gw01 vpn-auth[6911]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:23:53 vpn-gw01 vpn-auth[9819]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:24:00 vpn-gw01 vpn-auth[8352]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:24:07 vpn-gw01 vpn-auth[3556]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:24:13 vpn-gw01 vpn-auth[5511]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:24:19 vpn-gw01 vpn-auth[9984]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:24:27 vpn-gw01 vpn-auth[4467]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:24:34 vpn-gw01 vpn-auth[9040]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:24:42 vpn-gw01 vpn-auth[3579]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:24:49 vpn-gw01 vpn-auth[9582]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:24:55 vpn-gw01 vpn-auth[1393]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:25:00 vpn-gw01 vpn-auth[2182]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:25:07 vpn-gw01 vpn-auth[9676]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:25:12 vpn-gw01 vpn-auth[4721]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:25:21 vpn-gw01 vpn-auth[5774]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:25:26 vpn-gw01 vpn-auth[3507]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:25:34 vpn-gw01 vpn-auth[1701]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:25:41 vpn-gw01 vpn-auth[2233]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:25:50 vpn-gw01 vpn-auth[2147]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:25:58 vpn-gw01 vpn-auth[8035]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:26:07 vpn-gw01 vpn-auth[1213]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:26:15 vpn-gw01 vpn-auth[8910]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:26:21 vpn-gw01 vpn-auth[4707]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:26:28 vpn-gw01 vpn-auth[8536]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:26:33 vpn-gw01 vpn-auth[9838]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:26:41 vpn-gw01 vpn-auth[2522]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:26:50 vpn-gw01 vpn-auth[3430]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:26:59 vpn-gw01 vpn-auth[1013]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:27:07 vpn-gw01 vpn-auth[6835]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:27:15 vpn-gw01 vpn-auth[1918]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:27:20 vpn-gw01 vpn-auth[6855]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:27:28 vpn-gw01 vpn-auth[2904]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:27:37 vpn-gw01 vpn-auth[8605]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:27:44 vpn-gw01 vpn-auth[9883]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:27:53 vpn-gw01 vpn-auth[1041]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:28:02 vpn-gw01 vpn-auth[8774]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:28:09 vpn-gw01 vpn-auth[1611]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:28:14 vpn-gw01 vpn-auth[6920]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:28:20 vpn-gw01 vpn-auth[3119]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:28:25 vpn-gw01 vpn-auth[3320]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:28:34 vpn-gw01 vpn-auth[1309]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:28:41 vpn-gw01 vpn-auth[8186]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:28:50 vpn-gw01 vpn-auth[2313]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:28:58 vpn-gw01 vpn-auth[2498]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:29:05 vpn-gw01 vpn-auth[1457]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:29:12 vpn-gw01 vpn-auth[9417]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:29:19 vpn-gw01 vpn-auth[1003]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:29:28 vpn-gw01 vpn-auth[3945]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:29:34 vpn-gw01 vpn-auth[949]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:29:42 vpn-gw01 vpn-auth[2966]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:29:50 vpn-gw01 vpn-auth[3706]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:29:57 vpn-gw01 vpn-auth[7784]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:30:04 vpn-gw01 vpn-auth[5600]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:30:12 vpn-gw01 vpn-auth[1570]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:30:21 vpn-gw01 vpn-auth[7226]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:30:27 vpn-gw01 vpn-auth[1165]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:30:33 vpn-gw01 vpn-auth[8458]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:30:38 vpn-gw01 vpn-auth[1562]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:30:47 vpn-gw01 vpn-auth[8907]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:30:52 vpn-gw01 vpn-auth[8736]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:30:58 vpn-gw01 vpn-auth[7402]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:31:03 vpn-gw01 vpn-auth[4114]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:31:09 vpn-gw01 vpn-auth[6083]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:31:15 vpn-gw01 vpn-auth[6090]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:31:22 vpn-gw01 vpn-auth[3671]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:31:30 vpn-gw01 vpn-auth[3582]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:31:35 vpn-gw01 vpn-auth[2382]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:31:43 vpn-gw01 vpn-auth[5253]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:31:48 vpn-gw01 vpn-auth[8690]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:31:55 vpn-gw01 vpn-auth[6653]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:32:04 vpn-gw01 vpn-auth[7843]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:32:12 vpn-gw01 vpn-auth[4840]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:32:19 vpn-gw01 vpn-auth[7108]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:32:27 vpn-gw01 vpn-auth[7477]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:32:33 vpn-gw01 vpn-auth[6660]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:32:38 vpn-gw01 vpn-auth[7176]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:32:46 vpn-gw01 vpn-auth[2642]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:32:54 vpn-gw01 vpn-auth[7821]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:33:01 vpn-gw01 vpn-auth[9189]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:33:06 vpn-gw01 vpn-auth[2179]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:33:12 vpn-gw01 vpn-auth[4272]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:33:19 vpn-gw01 vpn-auth[1100]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:33:26 vpn-gw01 vpn-auth[1696]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:33:31 vpn-gw01 vpn-auth[7752]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:33:37 vpn-gw01 vpn-auth[7818]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:33:43 vpn-gw01 vpn-auth[6774]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:33:51 vpn-gw01 vpn-auth[9430]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:33:59 vpn-gw01 vpn-auth[3169]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:34:08 vpn-gw01 vpn-auth[1217]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:34:16 vpn-gw01 vpn-auth[6505]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:34:25 vpn-gw01 vpn-auth[5674]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:34:31 vpn-gw01 vpn-auth[4575]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:34:39 vpn-gw01 vpn-auth[9156]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:34:47 vpn-gw01 vpn-auth[5559]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:34:54 vpn-gw01 vpn-auth[9040]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:35:01 vpn-gw01 vpn-auth[3977]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:35:08 vpn-gw01 vpn-auth[3558]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:35:14 vpn-gw01 vpn-auth[8922]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:35:21 vpn-gw01 vpn-auth[989]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:35:29 vpn-gw01 vpn-auth[9374]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:35:36 vpn-gw01 vpn-auth[3310]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:35:44 vpn-gw01 vpn-auth[6406]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:35:49 vpn-gw01 vpn-auth[8234]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:35:55 vpn-gw01 vpn-auth[1515]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:36:00 vpn-gw01 vpn-auth[3509]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:36:05 vpn-gw01 vpn-auth[3460]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:36:14 vpn-gw01 vpn-auth[4703]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:36:23 vpn-gw01 vpn-auth[6227]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:36:31 vpn-gw01 vpn-auth[2523]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:36:40 vpn-gw01 vpn-auth[1215]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:36:46 vpn-gw01 vpn-auth[4516]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:36:53 vpn-gw01 vpn-auth[3475]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:37:02 vpn-gw01 vpn-auth[2134]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:37:09 vpn-gw01 vpn-auth[3353]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:37:14 vpn-gw01 vpn-auth[2205]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:37:21 vpn-gw01 vpn-auth[8823]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:37:27 vpn-gw01 vpn-auth[1468]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:37:34 vpn-gw01 vpn-auth[7299]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:37:41 vpn-gw01 vpn-auth[8868]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:37:49 vpn-gw01 vpn-auth[8632]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:37:58 vpn-gw01 vpn-auth[5554]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:38:05 vpn-gw01 vpn-auth[4165]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:38:14 vpn-gw01 vpn-auth[5064]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:38:19 vpn-gw01 vpn-auth[2900]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:38:28 vpn-gw01 vpn-auth[5192]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:38:35 vpn-gw01 vpn-auth[6518]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:38:40 vpn-gw01 vpn-auth[7735]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:38:45 vpn-gw01 vpn-auth[1216]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:38:50 vpn-gw01 vpn-auth[9041]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:38:57 vpn-gw01 vpn-auth[6338]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:39:05 vpn-gw01 vpn-auth[7496]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:39:14 vpn-gw01 vpn-auth[6686]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:39:23 vpn-gw01 vpn-auth[8108]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:39:31 vpn-gw01 vpn-auth[9038]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:39:37 vpn-gw01 vpn-auth[3311]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:39:42 vpn-gw01 vpn-auth[2633]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:39:49 vpn-gw01 vpn-auth[5950]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:39:54 vpn-gw01 vpn-auth[6103]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:40:00 vpn-gw01 vpn-auth[3592]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:40:08 vpn-gw01 vpn-auth[4281]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:40:13 vpn-gw01 vpn-auth[3192]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:40:21 vpn-gw01 vpn-auth[5812]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:40:26 vpn-gw01 vpn-auth[6807]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:40:32 vpn-gw01 vpn-auth[7534]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:40:38 vpn-gw01 vpn-auth[3765]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:40:43 vpn-gw01 vpn-auth[4951]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:40:51 vpn-gw01 vpn-auth[8715]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:40:58 vpn-gw01 vpn-auth[2589]: authentication failure user=director01 rhost=203.0.113.45 method=password reason=bad_credentials
+Mar 12 02:41:10 vpn-gw01 vpn-auth[9232]: authentication success user=director01 rhost=203.0.113.45 method=password mfa=none
+Mar 12 02:41:12 vpn-gw01 vpn-auth[8286]: session start user=director01 rhost=203.0.113.45 assigned_ip=10.10.200.14
+Mar 12 02:46:02 srv-dc01 security[9918]: EventID=4625 logon failure user=director01 src=10.10.200.14 logon_type=3
+Mar 12 02:46:07 srv-dc01 security[9201]: EventID=4625 logon failure user=director01 src=10.10.200.14 logon_type=3
+Mar 12 02:46:15 srv-dc01 security[3554]: EventID=4625 logon failure user=director01 src=10.10.200.14 logon_type=3
+Mar 12 02:46:20 srv-dc01 security[2026]: EventID=4625 logon failure user=director01 src=10.10.200.14 logon_type=3
+Mar 12 02:46:30 srv-dc01 security[1332]: EventID=4625 logon failure user=director01 src=10.10.200.14 logon_type=3
+Mar 12 02:46:40 srv-dc01 security[1920]: EventID=4625 logon failure user=director01 src=10.10.200.14 logon_type=3
+Mar 12 02:46:46 srv-dc01 security[1412]: EventID=4624 logon success user=director01 src=10.10.200.14 logon_type=3 auth=ntlm
+Mar 12 02:47:26 srv-dc01 security[3190]: EventID=4720 account created target=svc-backup2 by=director01 src=10.10.200.14
+Mar 12 02:47:32 srv-dc01 security[1017]: EventID=4728 member added target=svc-backup2 group="Domain Admins" by=director01 src=10.10.200.14
+Mar 12 02:48:01 srv-fisiere security[8279]: EventID=4624 logon success user=svc-backup2 src=10.10.200.14 logon_type=3 auth=ntlm
+Mar 12 07:24:02 vpn-gw01 vpn-auth[4173]: authentication failure user=vanzari02 rhost=100.64.59.190 method=password reason=bad_credentials
+Mar 12 07:25:05 vpn-gw01 vpn-auth[5128]: authentication success user=vanzari02 rhost=100.64.59.190 method=password mfa=none
+Mar 12 07:25:07 vpn-gw01 vpn-auth[1865]: session start user=vanzari02 rhost=100.64.59.190 assigned_ip=10.10.200.48
+Mar 12 07:39:18 srv-dc01 security[2111]: EventID=4624 logon success user=vanzari01 src=10.10.3.55 logon_type=3 auth=kerberos
+Mar 12 07:41:32 vpn-gw01 vpn-auth[5970]: authentication failure user=logistica01 rhost=100.64.16.78 method=password reason=bad_credentials
+Mar 12 07:42:35 srv-dc01 security[972]: EventID=4624 logon success user=contabilitate02 src=10.10.3.64 logon_type=3 auth=kerberos
+Mar 12 07:42:40 vpn-gw01 vpn-auth[3288]: authentication success user=logistica01 rhost=100.64.16.78 method=password mfa=none
+Mar 12 07:42:42 vpn-gw01 vpn-auth[2282]: session start user=logistica01 rhost=100.64.16.78 assigned_ip=10.10.200.84
+Mar 12 07:46:14 vpn-gw01 vpn-auth[6164]: authentication failure user=contabilitate01 rhost=100.64.39.190 method=password reason=bad_credentials
+Mar 12 07:47:07 vpn-gw01 vpn-auth[2330]: authentication success user=contabilitate01 rhost=100.64.39.190 method=password mfa=none
+Mar 12 07:47:09 vpn-gw01 vpn-auth[1600]: session start user=contabilitate01 rhost=100.64.39.190 assigned_ip=10.10.200.53
+Mar 12 07:49:15 srv-dc01 security[1202]: EventID=4624 logon success user=vanzari01 src=10.10.3.84 logon_type=3 auth=kerberos
+Mar 12 07:51:14 vpn-gw01 vpn-auth[3981]: authentication success user=vanzari03 rhost=100.64.31.64 method=password mfa=none
+Mar 12 07:51:16 vpn-gw01 vpn-auth[6738]: session start user=vanzari03 rhost=100.64.31.64 assigned_ip=10.10.200.69
+Mar 12 07:51:32 vpn-gw01 vpn-auth[1249]: authentication success user=director01 rhost=100.64.16.68 method=password mfa=none
+Mar 12 07:51:34 vpn-gw01 vpn-auth[5858]: session start user=director01 rhost=100.64.16.68 assigned_ip=10.10.200.56
+Mar 12 07:53:29 srv-dc01 security[2147]: EventID=4624 logon success user=hr01 src=10.10.3.87 logon_type=3 auth=kerberos
+Mar 12 07:53:34 vpn-gw01 vpn-auth[1121]: authentication success user=vanzari01 rhost=100.64.23.105 method=password mfa=none
+Mar 12 07:53:36 vpn-gw01 vpn-auth[9135]: session start user=vanzari01 rhost=100.64.23.105 assigned_ip=10.10.200.33
+Mar 12 07:54:11 srv-dc01 security[7793]: EventID=4624 logon success user=vanzari01 src=10.10.3.24 logon_type=3 auth=kerberos
+Mar 12 07:56:06 srv-dc01 security[6203]: EventID=4624 logon success user=achizitii01 src=10.10.3.49 logon_type=3 auth=kerberos
+Mar 12 08:00:07 srv-fisiere sshd[9034]: Accepted password for it.admin from 10.10.3.15 port 58460 ssh2
+Mar 12 08:02:04 srv-dc01 security[4032]: EventID=4624 logon success user=director01 src=10.10.3.45 logon_type=3 auth=kerberos
+Mar 12 08:02:14 srv-dc01 security[2620]: EventID=4624 logon success user=director01 src=10.10.3.46 logon_type=3 auth=kerberos
+Mar 12 08:02:15 srv-backup sshd[5363]: Accepted password for it.admin from 10.10.3.15 port 56465 ssh2
+Mar 12 08:05:15 srv-dc01 security[7561]: EventID=4624 logon success user=achizitii01 src=10.10.3.64 logon_type=3 auth=kerberos
+Mar 12 08:09:03 vpn-gw01 vpn-auth[2042]: authentication failure user=achizitii01 rhost=100.64.39.37 method=password reason=bad_credentials
+Mar 12 08:09:44 vpn-gw01 vpn-auth[2347]: authentication success user=achizitii01 rhost=100.64.39.37 method=password mfa=none
+Mar 12 08:09:46 vpn-gw01 vpn-auth[1537]: session start user=achizitii01 rhost=100.64.39.37 assigned_ip=10.10.200.87
+Mar 12 08:10:34 srv-dc01 security[2950]: EventID=4624 logon success user=achizitii01 src=10.10.3.21 logon_type=3 auth=kerberos
+Mar 12 08:11:41 srv-fisiere sshd[4093]: Accepted password for it.admin from 10.10.3.15 port 44596 ssh2
+Mar 12 08:14:04 srv-backup sshd[8311]: Accepted password for it.admin from 10.10.3.15 port 40369 ssh2
+Mar 12 08:16:06 srv-dc01 security[9761]: EventID=4624 logon success user=vanzari03 src=10.10.3.55 logon_type=3 auth=kerberos
+Mar 12 08:18:34 vpn-gw01 vpn-auth[7507]: authentication success user=hr01 rhost=100.64.49.32 method=password mfa=none
+Mar 12 08:18:36 vpn-gw01 vpn-auth[9258]: session start user=hr01 rhost=100.64.49.32 assigned_ip=10.10.200.85
+Mar 12 08:21:22 vpn-gw01 vpn-auth[6401]: authentication success user=contabilitate02 rhost=100.64.38.89 method=password mfa=none
+Mar 12 08:21:24 vpn-gw01 vpn-auth[6529]: session start user=contabilitate02 rhost=100.64.38.89 assigned_ip=10.10.200.99
+Mar 12 08:22:52 srv-dc01 security[1120]: EventID=4624 logon success user=contabilitate01 src=10.10.3.29 logon_type=3 auth=kerberos
+Mar 12 08:27:09 srv-dc01 security[2874]: EventID=4624 logon success user=hr01 src=10.10.3.62 logon_type=3 auth=kerberos
+Mar 12 08:29:30 srv-dc01 security[2088]: EventID=4624 logon success user=vanzari01 src=10.10.3.87 logon_type=3 auth=kerberos

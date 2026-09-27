@@ -1,0 +1,29 @@
+Return-Path: <bounce@mail-extern.example>
+Received: from mail-extern.example (unknown [203.0.113.99])
+	by mx01.firma-demo.example with ESMTP id 4F2A9;
+	Thu, 12 Mar 2026 01:20:00 +0000
+Authentication-Results: mx01.firma-demo.example;
+	spf=fail (sender IP is 203.0.113.99) smtp.mailfrom=mail-extern.example;
+	dkim=fail reason="signature verification failed";
+	dmarc=fail action=quarantine header.from=furnizor-demo.example
+From: "Facturi Furnizor Demo" <facturi@furnizor-demo.example>
+Reply-To: facturi@furnizor-demo.example.mail-extern.example
+To: contabilitate01@firma-demo.example
+Subject: URGENT: modificare cont bancar factura 1042
+Date: Thu, 12 Mar 2026 03:20:00 +0200
+Message-ID: <9f8c2a10-fraud@mail-extern.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+Bună ziua,
+
+Vă informăm că am schimbat contul bancar. Vă rugăm ca factura 1042 să fie
+achitată în noul cont IBAN RO00 DEMO 0000 0000 0000 9999 (Banca Demo).
+Confirmarea este urgentă, plata trebuie efectuată astăzi.
+
+Cu stimă,
+Departament Facturare
+
+-- 
+Notă de laborator: e-mail sintetic. Indicii de fraudă — SPF/DKIM/DMARC=fail,
+Reply-To pe domeniu diferit de From, ton de urgență, schimbare de IBAN.
